@@ -1,0 +1,117 @@
+﻿Type,label,id,descriptions,options
+Input,ID,1,Enter your id,
+Input,Name,2,Enter your name,
+Check-box,Favourite Food,3,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,4,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,5,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,6,Enter your query,
+Short-Answer,Review,7,Write a review,
+Check-box,Favourite Food,8,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,9,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,10,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,11,Enter your query,
+Short-Answer,Review,12,Write a review,
+Slider,Salary,13,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,14,Enter your query,
+Short-Answer,Review,15,Write a review,
+Check-box,Favourite Food,16,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,17,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,18,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,19,Enter your query,
+Short-Answer,Review,20,Write a review,
+Input,Name,21,Enter your name,
+Check-box,Favourite Food,22,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,23,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,24,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,25,Enter your query,
+Short-Answer,Review,26,Write a review,
+Check-box,Favourite Food,27,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,28,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,29,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,30,Enter your query,
+Short-Answer,Review,31,Write a review,
+Slider,Salary,32,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,33,Enter your query,
+Short-Answer,Review,34,Write a review,
+Check-box,Favourite Food,35,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,36,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,37,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,38,Enter your query,
+Short-Answer,Review,39,Write a review,
+Detail-Answer,Query,40,Enter your query,
+Short-Answer,Review,41,Write a review,
+Check-box,Favourite Food,42,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,43,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,44,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,45,Enter your query,
+Short-Answer,Review,46,Write a review,
+Slider,Salary,47,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,48,Enter your query,
+Short-Answer,Review,49,Write a review,
+Check-box,Favourite Food,50,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,51,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,52,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,53,Enter your query,
+Short-Answer,Review,54,Write a review,
+Input,Name,55,Enter your name,
+Check-box,Favourite Food,56,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,57,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,58,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,59,Enter your query,
+Short-Answer,Review,60,Write a review,
+Check-box,Favourite Food,61,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,62,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,63,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,64,Enter your query,
+Short-Answer,Review,65,Write a review,
+Slider,Salary,66,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,67,Enter your query,
+Short-Answer,Review,68,Write a review,
+Check-box,Favourite Food,69,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Slider,Salary,70,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,71,Enter your query,
+Short-Answer,Review,72,Write a review,
+Check-box,Favourite Food,73,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,74,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,75,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,76,Enter your query,
+Short-Answer,Review,77,Write a review,
+Input,Name,78,Enter your name,
+Check-box,Favourite Food,79,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,80,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,81,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,82,Enter your query,
+Short-Answer,Review,83,Write a review,
+Check-box,Favourite Food,84,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,85,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,86,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,87,Enter your query,
+Short-Answer,Review,88,Write a review,
+Slider,Salary,89,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,90,Enter your query,
+Short-Answer,Review,91,Write a review,
+Slider,Salary,92,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,93,Enter your query,
+Short-Answer,Review,94,Write a review,
+Check-box,Favourite Food,95,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Slider,Salary,96,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,97,Enter your query,
+Short-Answer,Review,98,Write a review,
+Check-box,Favourite Food,99,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,100,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,101,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,102,Enter your query,
+Short-Answer,Review,103,Write a review,
+Input,Name,104,Enter your name,
+Check-box,Favourite Food,105,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,106,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,107,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,108,Enter your query,
+Short-Answer,Review,109,Write a review,
+Check-box,Favourite Food,110,What fruits do you like?,"Seasonal,Tropical,High Lands,Ground"
+Radio,Expirience,111,How much is your expirience?,"0-1,1-4,4-7,7-10"
+Slider,Salary,112,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,113,Enter your query,
+Short-Answer,Review,114,Write a review,
+Slider,Salary,115,What's your salary?,"100000,1000,1000"
+Detail-Answer,Query,116,Enter your query,

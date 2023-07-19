@@ -1,0 +1,68 @@
+<form [formGroup]="question">
+  <mat-toolbar color="primary" class="tb">
+
+    <span>Form Builder</span>
+
+  </mat-toolbar>
+  <mat-card class="main_card">
+    <mat-card class="card">
+      <mat-card-title>Let me know, what is your form's title?</mat-card-title>
+      <mat-card-subtitle>Be careful while stating the title</mat-card-subtitle>
+      <mat-card-actions align="start">
+        <mat-form-field class="example-form-field" appearance="fill">
+          <mat-label>Title</mat-label>
+          <input matInput type="text" id="title" formControlName="Title">
+          <span class="error" *ngIf="Title?.invalid && Title?.touched">This field is required</span>
+        </mat-form-field>
+      </mat-card-actions>
+    </mat-card>
+
+
+    <mat-card class="card">
+      <mat-card-title>Let me know, what is your form's path?</mat-card-title>
+      <mat-card-subtitle>Be careful while stating the path</mat-card-subtitle>
+      <mat-card-actions align="start">
+        <mat-form-field class="example-form-field" appearance="fill">
+          <mat-label>Path</mat-label>
+          <input matInput type="text" id="path" formControlName="path">
+          <span class="error" *ngIf="path?.invalid && path?.touched">This field is required</span>
+        </mat-form-field>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-title>Let me know, what is your form's life span?</mat-card-title>
+      <mat-card-subtitle>Be careful while stating the dates</mat-card-subtitle>
+      <mat-card-actions>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter a date range</mat-label>
+          <mat-date-range-input required [formGroup]="range" [rangePicker]="picker">
+            <input matStartDate required id="start" formControlName="start" placeholder="Start date">
+            <input matEndDate required formControlName="end" placeholder="End date">
+          </mat-date-range-input>
+          <span class="error" *ngIf="range.invalid && range.touched">This field is required</span>
+          <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-date-range-picker #picker></mat-date-range-picker>
+
+          <mat-error *ngIf="range.controls.start.hasError('matStartDateInvalid')">Invalid start date</mat-error>
+          <mat-error *ngIf="range.controls.end.hasError('matEndDateInvalid')">Invalid end date</mat-error>
+        </mat-form-field>
+
+        <p>Selected range: {{range.value | json}}</p>
+        <!-- <p>Selected range: {{dateOfAdjournment | json}}</p> -->
+
+
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-title>Click, below to generate a form !</mat-card-title>
+      <mat-card-actions style="text-align:center">
+        <button class="btn" mat-raised-button color="primary" (click)="goToPage('/input');"
+          [disabled]="question.invalid || range.invalid">Generate,
+          form</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-card>
+</form>

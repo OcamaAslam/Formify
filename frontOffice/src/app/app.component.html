@@ -1,0 +1,118 @@
+<form *ngIf="forms" [formGroup]="Form" (ngSubmit)="onSubmit()">
+  <mat-toolbar>
+    <span>{{forms.title}}</span>
+
+  </mat-toolbar>
+  <mat-card class="logo"></mat-card>
+  <mat-card class="main_card">
+    <div *ngFor="let question_ of forms.question">
+      <!-- ----------------------------------------------------------------------------------------------       -->
+      <div *ngIf="question_.Type == 'Radio'"><br>
+        <mat-card class="card">
+          <label id="{{ question_.id }}">{{ question_.descriptions }}</label>
+          <mat-radio-group aria-labelledby="item.label" class="example-radio-group" [formControlName]="question_.id">
+            <ng-container *ngFor="let value of question_.options">
+              <mat-radio-button class="example-radio-button" [value]="value">
+                {{ value }} </mat-radio-button>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </ng-container>
+          </mat-radio-group>
+        </mat-card>
+      </div>
+      <!-- ----------------------------------------------------------------------------------------------       -->
+
+      <div *ngIf="question_.Type == 'Check-box'"><br>
+        <mat-card class="card">
+          <mat-card-content>
+            <span>{{ question_.descriptions }}</span>
+
+            <section class="example-section">
+              <ng-container *ngFor="let value of question_.options">
+                <mat-checkbox class="example-margin" (change)="toggleItem($event,question_,value)">
+                  {{ value }} </mat-checkbox>
+              </ng-container>
+            </section>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <!-- ----------------------------------------------------------------------------------------------       -->
+
+      <div *ngIf="question_.Type == 'Drop-down'"><br>
+        <mat-card class="card">
+          <span>{{ question_.descriptions }}</span><br><br>
+          <mat-form-field appearance="fill">
+
+            <mat-label>{{ question_.label }}</mat-label>
+            <mat-select [formControlName]="question_.id">
+              <mat-option *ngFor="let value of question_.options" [value]="value">
+                {{ value }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-card>
+      </div>
+      <!-- ----------------------------------------------------------------------------------------------       -->
+
+      <div *ngIf="question_.Type == 'Short-Answer'"><br>
+        <mat-card class="card">
+          <mat-card-content> {{question_.descriptions }}</mat-card-content>
+          <mat-form-field appearance="fill" class="openField">
+            <mat-label>{{ question_.label }}</mat-label>
+            <textarea matInput [formControlName]="question_.id"></textarea>
+          </mat-form-field>
+        </mat-card>
+      </div>
+      <!-- ----------------------------------------------------------------------------------------------       -->
+
+      <div *ngIf="question_.Type == 'Detail-Answer'"><br>
+        <mat-card class="card">
+          <mat-card-content> {{question_.descriptions }}</mat-card-content>
+          <mat-form-field appearance="fill" class="openField">
+            <mat-label>{{ question_.label }}</mat-label>
+            <textarea matInput [formControlName]="question_.id"></textarea>
+          </mat-form-field>
+        </mat-card>
+      </div>
+      <!-- ----------------------------------------------------------------------------------------------       -->
+
+      <div *ngIf="question_.Type == 'Input'"><br>
+        <mat-card class="card">
+          <mat-card-content>{{question_.descriptions }}</mat-card-content><br>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{ question_.label }}</mat-label>
+            <input matInput [formControlName]="question_.id">
+          </mat-form-field>
+        </mat-card>
+      </div>
+      <!-- ----------------------------------------------------------------------------------------------       -->
+
+      <div *ngIf="question_.Type == 'Slider'"><br>
+        <mat-card class="card">
+          <mat-card-content>
+            {{question_.descriptions }}<br><br>
+            <label class="example-value-label">{{ question_.label }}
+            </label>
+            <mat-slider thumbLabel class="example-margin" [max]="question_.options[0]" [min]="question_.options[1]"
+              [step]="question_.options[2]" [formControlName]="question_.id" aria-labelledby="example-name-label">
+            </mat-slider>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <!-- ----------------------------------------------------------------------------------------------       -->
+
+
+    </div>
+    <!-- ----------------------------------------------------------------------------------------------       -->
+    <br>
+    <mat-card class="card">
+      <span>Click, submit in order to submit your form</span>
+      <mat-card-actions style="text-align:center">
+        <button class='button' type="submit" mat-raised-button color="warn" [disabled]="Form.invalid">Submit</button>
+      </mat-card-actions>
+    </mat-card>
+    <!-- ----------------------------------------------------------------------------------------------       -->
+
+  </mat-card>
+  <!-- ----------------------------------------------------------------------------------------------       -->
+
+</form>

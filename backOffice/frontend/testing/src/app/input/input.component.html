@@ -1,0 +1,102 @@
+<form [formGroup]="input" (ngSubmit)="onSubmit()">
+  <mat-toolbar color="primary" class="tb">
+    <span>Questionaire</span>
+  </mat-toolbar>
+
+  <mat-card class="main_card">
+    <!-- ------------------------------------------------------------------------------------- -->
+    <form [formGroup]="file_path">
+      <mat-card class="card">
+        <mat-card-title>Enter file PATH here</mat-card-title>
+        <mat-card-subtitle>File format shoul be .csv</mat-card-subtitle>
+        <mat-form-field class="example-form-field" appearance="fill">
+          <mat-label>PATH</mat-label>
+          <input matInput type="text" id="path" formControlName="path" />
+          <div>Your file path is: {{ path?.value }}</div>
+        </mat-form-field>
+        <button mat-raised-button type="button" color="primary" (click)="processpath()">
+          Process
+        </button>
+      </mat-card>
+    </form>
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    <mat-card class="card">
+      <mat-card-title>Let me know, what is your question's type?</mat-card-title>
+      <label id="example-radio-group-label">Pick your question type</label>
+      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" formControlName="Type">
+        <mat-radio-button class="example-radio-button" *ngFor="let type of question_type" [value]="type">
+          {{ type }}
+        </mat-radio-button>
+      </mat-radio-group>
+      <div>Your question type is: {{ Type?.value }}</div>
+
+      <span class="error" *ngIf="Type?.invalid && Type?.touched">This field is required</span>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-title>Let me know, what is your question's label?</mat-card-title>
+      <mat-card-subtitle>Be careful while stating the label</mat-card-subtitle>
+      <mat-card-actions align="start">
+        <mat-form-field class="example-form-field" appearance="fill">
+          <mat-label>Label</mat-label>
+          <input matInput type="text" id="label" formControlName="label" />
+          <span class="error" *ngIf="label?.invalid && label?.touched">This field is required</span>
+        </mat-form-field>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-title>Let me know, what is your question's id?</mat-card-title>
+      <mat-card-subtitle>Be careful while stating the id</mat-card-subtitle>
+      <mat-card-actions align="start">
+        <mat-form-field class="example-form-field" appearance="fill">
+          <mat-label>ID</mat-label>
+          <input matInput type="text" id="Id" formControlName="id" />
+          <span class="error" *ngIf="id?.invalid && id?.touched">This field is required</span>
+        </mat-form-field>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-title>Let me know, what is your question's description?</mat-card-title>
+      <mat-card-subtitle>Be careful while stating the description</mat-card-subtitle>
+      <mat-card-actions align="start">
+        <mat-form-field class="example-form-field" appearance="fill">
+          <mat-label>Description</mat-label>
+          <input matInput type="text" id="description" formControlName="descriptions" />
+          <span class="error" *ngIf="descriptions?.invalid && descriptions?.touched">This field is required</span>
+        </mat-form-field>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- <div *ngIf="Type?.value!=='Input' && Type?.value!=='Detail-Answer' && Type?.value!=='Short-Answer'"> -->
+    <mat-card class="card">
+      <mat-card-title *ngIf="Type?.value != 'Slider'">Let me know, what is your question's options?</mat-card-title>
+      <mat-card-title *ngIf="Type?.value == 'Slider'">Let me know, what are the slider's attributes?</mat-card-title>
+      <mat-card-subtitle>Be careful while stating the options, Options should be comma ","
+        seprated !
+      </mat-card-subtitle>
+      <span *ngIf="Type?.value == 'Slider'">max followed by min followed by step</span>
+      <mat-card-actions align="start">
+        <mat-form-field class="example-form-field" appearance="fill">
+          <mat-label>Options should be comma "," seprated</mat-label>
+          <input matInput type="text" id="options" formControlName="options" />
+          <span class="error" *ngIf="options?.invalid && options?.touched">This field is required</span>
+        </mat-form-field>
+      </mat-card-actions>
+    </mat-card>
+    <!-- </div> -->
+
+    <mat-card class="card">
+      <mat-card-title>Click, below to add another question !</mat-card-title>
+      <mat-card-actions style="text-align: center">
+        <button mat-raised-button color="primary" (click)="addquestion()" [disabled]="input.invalid">
+          Next, question
+        </button>
+
+        <button mat-raised-button color="warn">Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-card>
+</form>

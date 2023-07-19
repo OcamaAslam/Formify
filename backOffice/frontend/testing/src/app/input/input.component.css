@@ -1,0 +1,42 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-form-field {
+  width: 100%;
+  text-align: center;
+}
+
+.tb {
+  justify-content: center;
+}
+
+.error {
+  color: red;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+
+.card {
+  /* border-bottom: solid 1px black; */
+  border-bottom: solid 2px black;
+  border-left: solid 5px purple;
+  width: 50%;
+  margin: 0 auto;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.main_card {
+  background-image: url(../bg.jpg);
+}

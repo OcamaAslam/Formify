@@ -1,0 +1,62 @@
+.example-radio-group {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.openField {
+  width: 100%;
+}
+
+.example-margin {
+  padding-right: 4em
+}
+
+.mat-toolbar {
+  font-family: 'Times New Roman';
+  font-size: xx-large;
+  background-color: rgb(69, 1, 112);
+  justify-content: center;
+  color: white;
+}
+
+.card {
+  margin: 0 auto;
+  font-family: 'Times New Roman';
+  font-size: larger;
+  background-color: white;
+  border: solid 3px rgb(17, 50, 29);
+  width: 50%;
+}
+
+.example-margin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 68px;
+  height: 48px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.logo {
+  background-image: url(../logo.png);
+  background-repeat: no-repeat;
+  border: 0;
+  padding-bottom: 3.55cm;
+  border-color: white;
+}
+
+.main_card {
+  border: 0;
+  border-color: white;
+}
